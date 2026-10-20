@@ -1,6 +1,6 @@
 # PCL2 非线上更新 & 可下载版（Non-Online-Update & DownloadAvailable）
 
-基于 [Plain Craft Launcher](https://github.com/Meloong-Git/PCL) 官方开源仓库的自构建分支，针对「遗尘往事」整合包场景做两处调整：
+基于 [Plain Craft Launcher](https://github.com/Meloong-Git/PCL) 官方开源仓库的自构建分支
 
 ## 改动说明
 
@@ -17,13 +17,6 @@
 
 ## 上游
 
-包含 PCL 的大部分源代码，包括 UI 库、动画模块、下载模块、Minecraft 启动模块等！<br/>
-代码并不是实时更新的，它会在每次 PCL 发布更新时同步一次。<br/>
-非常感谢社区的大力支持！
+包含 PCL 的所有源代码，包括 UI 库、动画模块、下载模块、Minecraft 启动模块等！<br/>
 
 <br/>
-
-### 相关资源
-- [PCL 下载](https://meloong.com/pcl)：下载可免费使用的正式版 PCL！
-- [PCL 功能投票](https://github.com/Meloong-Git/PCL/discussions/2)：来参加投票吧，开发者会优先处理票数较高的项目！
-- [帮助文档库](https://github.com/LTCatt/PCL2Help)：PCL 内置帮助文档的存储库
