@@ -1,9 +1,21 @@
-# Plain Craft Launcher
+# PCL2 非线上更新 & 可下载版（Non-Online-Update & DownloadAvailable）
 
-[![Stars](https://img.shields.io/github/stars/Meloong-Git/PCL?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZD0iTTggLjI1YS43NS43NSAwIDAgMSAuNjczLjQxOGwxLjg4MiAzLjgxNSA0LjIxLjYxMmEuNzUuNzUgMCAwIDEgLjQxNiAxLjI3OWwtMy4wNDYgMi45Ny43MTkgNC4xOTJhLjc1MS43NTEgMCAwIDEtMS4wODguNzkxTDggMTIuMzQ3bC0zLjc2NiAxLjk4YS43NS43NSAwIDAgMS0xLjA4OC0uNzlsLjcyLTQuMTk0TC44MTggNi4zNzRhLjc1Ljc1IDAgMCAxIC40MTYtMS4yOGw0LjIxLS42MTFMNy4zMjcuNjY4QS43NS43NSAwIDAgMSA4IC4yNVoiIGZpbGw9IiNlYWM1NGYiLz48L3N2Zz4=&logoSize=auto&label=Stars&labelColor=444444&color=eac54f)](https://github.com/Meloong-Git/PCL/)
-[![Issues](https://img.shields.io/github/issues/Meloong-Git/PCL?style=flat&label=Issues&labelColor=444444&color=1F883D)](https://github.com/Meloong-Git/PCL/issues)
-[![哔哩哔哩](https://img.shields.io/badge/动态-BiliBili-00A4DB?style=flat&labelColor=444444&logoSize=auto)](https://space.bilibili.com/11343203/dynamic)
-[![爱发电](https://img.shields.io/badge/赞助-爱发电-946ce6?style=flat&labelColor=444444&logoSize=auto)](https://meloong.com/afd/a/LTCat)
+基于 [Plain Craft Launcher](https://github.com/Meloong-Git/PCL) 官方开源仓库的自构建分支，针对「遗尘往事」整合包场景做两处调整：
+
+## 改动说明
+
+| 项目 | 官方行为 | 本分支 |
+|---|---|---|
+| **MC 下载功能** | 按政策移除（`RestrictMcDownload = True`，下载渠道关闭）| **恢复**（`RestrictMcDownload = False`，下载/安装整合包、MC 版本可用）|
+| **启动器自动更新** | 正式版存在更新推送 | **无**（基于开源分支，更新功能天然 stub，不会自动更新）|
+
+> 其余身份常量（微软登录 ClientId、注册表分支 `PCL`、遥测 URL）与官方正式版一致，可继承既有登录/设置。
+
+## 构建
+
+工程目标 `.NET Framework 4.8`，需要 VS 2022 MSBuild + net48 参考程序集。仓库内含 `toolchain/`（.NET SDK + ref assemblies，本机构建用，不入 git）。
+
+## 上游
 
 包含 PCL 的大部分源代码，包括 UI 库、动画模块、下载模块、Minecraft 启动模块等！<br/>
 代码并不是实时更新的，它会在每次 PCL 发布更新时同步一次。<br/>

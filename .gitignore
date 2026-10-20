@@ -342,3 +342,8 @@ ASALocalRun/
 healthchecksdb
 
 MaskFiles/
+
+# 本地构建缓存与备份（不入库）
+toolchain/
+_tools/
+_backup/
